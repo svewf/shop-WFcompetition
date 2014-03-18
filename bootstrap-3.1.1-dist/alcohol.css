@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('/fonts/futurabold/futubd__.eot');
+    src: local('/fonts/futurabold/futubd__.eot'),
+             url('/fonts/futurabold/futubd__.woff') format('woff'),
+             url('/fonts/futurabold/futubd__.ttf') format('truetype'),
+             url('/fonts/futurabold/futubd__.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+ @font-face {
+    font-family: 'FuturaBook';
+    src: url('/fonts/futurabook/ftrabk__.eot');
+    src: local('/fonts/futurabook/ftrabk__.eot'),
+             url('fonts/futurabook/ftrabk__.woff') format('woff'),
+             url('fonts/futurabook/ftrabk__.ttf') format('truetype'),
+             url('fonts/futurabook/ftrabk__.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+.share{margin-top: 60px;padding-left:20px;}
+.header{margin-top:30px;margin-bottom:20px;}
+.lefttop{background-color:blue;height:100px;}
+#Title{font-size:40px;font-family:FuturaBook;color:#54B045;}
+.colors{background-color:#333333;}
+#myCarousel{}
+.listStyle{list-style:none;font-family:FuturaBook;}
+.rightsidetext{color:#54B045;float:left;width:100px;font-size: 18px;line-height: 25px;font-family: FuturaBook;}
+.leftsidetext{color:#54B045;float:left;width:100px;font-size: 18px;line-height: 25px;font-family: FuturaBook;}
+.basket{color:#54B045;margin-top: 15px;height: 30px;margin-right: 15px;}
+.baskett{color:#54B045;margin-top: 15px;margin-right:15px;}
+.glyphicon {}
+.jumbotron{border-radius:5px;}
+#thumbnail{color:#54B045;text-align: center;font-family:FuturaBook;}
+.navbar-inverse .navbar-brand{color:#54B045;}
+.dropdown-menu>li>a{color:white;}
+.dropdown-menu{background-color:#333333;}
+.titledesc{font-size:18px;font-family:FuturaBook;color:999999;}
+#footer{border:1px solid #999999;background-color:#eee;border-top-left-radius:5px;border-top-right-radius:5px;}
+.listFooter{list-style:none;font-family:FuturaBook;color:#999999;font-size:16px;}
+li a{text-decoration:none;color:black;color:#333333;}
+.basket a{}
+a{color:#54B045;}
+.basket a:hover{#428bca;}
+a:hover{text-decoration:none;color:black;color:#428bca;}
+.ftulstl{font-size:19px;color:#54B045;line-height:27px;font-family:FuturaBook;}
+.listFooterr{font-size:15px;list-style:none;}
+#sticker{margin-bottom:20px;}
+.divid{height: 2px;margin: 9px 0;overflow: hidden;background-color:#54B045;list-style:none;}
+.btnreg{float:right;}
+.logout{color:#54B045;font-family:FuturaBook;}
+.userlab{color:white;font-size:13px;font-family:FuturaBook;}
+.welcomeusr{}
+#regpic{opacity:0.9;}
+.simpleCart_empty{color:#54B045;}
+.baskettt{color:#54B045;margin-top: 15px;margin-right:15px;}
+.headerRow{border:1px solid #333;}
+.classysocial{width:0px;}
+.item-price{padding:10px 40px;border:1px solid #333;font-family:FuturaBook;}
+.item-name{padding:10px 40px;border:1px solid #333;font-family:FuturaBook;}
+.item-quantity{padding:10px 40px;border:1px solid #333;text-align:center;font-family:FuturaBook;}
+.item-remove{padding:10px 40px;border:1px solid #333;font-family:FuturaBook;}
+.item-total{padding:10px 40px;border:1px solid #333;text-align:center;font-family:FuturaBook;}
+.item-increment{padding:10px 40px;border:1px solid #333;font-size: 20px;}
+.item-decrement{padding:10px 40px;border:1px solid #333;font-size: 20px;}
+.listFooterr2{font-size:15px;list-style:none;color:black;}
+#map{min-height:300px;border-radius:4px;}
+.divid2{height: 2px;margin: 9px 0;overflow: hidden;background-color:#54B045;list-style:none;}
+.ftulstl2{font-size:27px;color:#54B045;font-family:FuturaBook;}
+.contactLeft{}
+.contactStl{line-height: 40px;font-family: FuturaBook;font-size: 17px;}
+
+#reg_form input.error{border-color:#e77774;}
+#reg_form div span.error{color:red;}
+.error{border:1px solid #efefef;}
+.error ul li strong{color:red;}
+.error.valid ul li strong{color:red;}
+#reg_form textarea.error{border-color:#e77774;}
+#red_form select.error{border-color:#e77774;}
+select.error{border-color:#e77774;}

@@ -1,0 +1,247 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="alcohol.css" />
+<script>
+$(document).ready(function (){
+var form = $("#reg_form");
+var name = $("#name");
+var nameDetails = $("#nameDetails");
+var nameDetails = $("#nameDetails");
+var email = $("#email");
+var emailDetails = $("#emailDetails");
+var Password1 = $("#Password1");
+var Password1Details = $("#Password1Details");
+var Password2 = $("#Password2");
+var Password2Details = $("#Password2Details");
+var message = $("#message");
+var button = $("#send");
+
+
+name.blur(validateName);
+email.blur(validateEmail);
+Password1.blur(validatePassword1);
+Password2.blur(validatePassword2);
+message.blur(validateMessage);
+name.keyup(validateName);
+email.keyup(validateEmail);
+Password1.keyup(validatePassword1);
+Password2.keyup(validatePassword2);
+message.keyup(validateMessage);
+
+form.submit(function(){
+	if (validateName() & validateEmail() & validatePassword1() & validatePassword2() & validateMessage()) {
+		return true;
+	} else {
+		return false;
+	}
+});
+	function validateName(){
+		if(name.val().length < 5){
+			name.addClass("error");
+			nameDetails.text("Your name is too short.Make it 5 characters or more");
+			nameDetails.addClass("error");
+			return false;
+		} else {
+			name.removeClass("error");
+			nameDetails.text("What's your name?");
+			nameDetails.removeClass("error");
+			return true;
+		}
+	}
+	
+	function validateEmail(){
+		var a = email.val();
+		var regexp = /^[a-zA-Z0-9]+[a-zA-Z0-9_.-]+[a-zA-Z0-9_-]+@[a-zA-Z0-9]+[a-zA-Z0-9.-]+[a-zA-Z0-9]+.[a-z]{2,4}$/;
+		
+		if(regexp.test(a)){
+			email.removeClass("error");
+			emailDetails.text("So I can get back to you");
+			emailDetails.removeClass("error");
+			return true;
+		} else {
+			email.addClass("error");
+			emailDetails.text("Enter a valid email address");
+			emailDetails.addClass("error");
+			return false;
+		}
+	}	
+	
+	function validatePassword1(){
+		if(Password1.val().length < 8){
+			Password1.addClass("error");
+			Password1Details.text("8 characters or more");
+			Password1Details.addClass("error");
+			return false;
+		} else {
+			Password1.removeClass("error");
+			Password1Details.text("8 characters or more");
+			Password1Details.removeClass("error");
+			return true;
+		}
+	}
+	function validatePassword2(){
+		if(Password2.val().length < 1){
+			Password2.addClass("error");
+			Password2Details.text("No text entered");
+			Password2Details.addClass("error");
+			return false;
+		}
+		if(Password1.val() !== Password2.val()){
+			Password2.addClass("error");
+			Password2Details.text("Password do not match");
+			Password2Details.addClass("error");
+			return false;
+		} else {
+			Password2.removeClass("error");
+			Password2Details.text("Same as above");
+			Password2Details.removeClass("error");
+			return true;
+		}
+	}
+	function validateMessage() {
+		if(message.val().length < 30){
+			message.addClass("error");
+			messageDetails.text("hfsd hdshgd shdsdgh");
+			messageDetails.addClass("error");
+			return false;
+		} else {
+			message.removeClass("error");
+			messageDetails.text("YEAAAAAAAAAAAAAAAAAH");
+			messageDetails.removeClass("error");
+			return true;
+		}
+		
+	}
+	
+});
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/bg_BG/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+</head>
+<body class="colors">
+<div class="container-fluid">
+<div class="row">
+	<div class="col-xs-12">
+		<div class="header">
+			<div id="Title"><img src="cooltext1451775779.png" class="img-responsive" /></div>
+			<!--<p class="titledesc">Connecting people</p>-->
+			<!--<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
+					99%
+				</div>
+				
+			</div>-->
+		</div>
+	</div>
+</div>
+
+<div class="jumbotron">
+<div class="row">
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+<div id="fb-root">AAAABBBBBBEEEEEEEEEEEE</div>
+<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<form role="form" id="reg_form">
+<div class="form-group">
+    <label for="name">First name</label>
+    <input type="text" class="form-control" id="name" placeholder="First name">
+	<span id="nameDetails">What's your name</span>
+  </div>
+  <div class="form-group">
+    <label for="name">Last name</label>
+    <input type="text" class="form-control" id="name" placeholder="Last name">
+	<span id="nameDetails">What's your name</span>
+  </div>
+<div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
+	<span id="emailDetails">So I can get back to you</span>
+  </div>
+  <div class="form-group">
+    <label for="Password1">Password</label>
+    <input type="password" class="form-control" id="Password1" placeholder="Password">
+	<span id="Password1Details">8 characters or more</span>
+  </div>
+  <div class="form-group">
+    <label for="Password2">Confirm password</label>
+    <input type="password" class="form-control" id="Password2" placeholder="Confirm password">
+		<span id="Password2Details">Same as above</span>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+  <label for="exampleInputEmail1">Day</label>
+  <select class="form-control">
+  <option>Select</option>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<label for="exampleInputEmail1">Month</label>
+<select class="form-control">
+  <option>Select</option>
+  <option>January</option>
+  <option>February</option>
+  <option>March</option>
+  <option>April</option>
+</select>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<label for="exampleInputEmail1">Year</label>
+<select class="form-control">
+  <option>Select</option>
+  <option>2014</option>
+  <option>2013</option>
+  <option>2012</option>
+  <option>2011</option>
+</select>
+</div>
+</div>
+    <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Male
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Female
+  </label>
+</div>
+  <div class="form-group">
+  <label for="message">About me</label>
+  <textarea id="message" class="form-control" rows="3"></textarea>
+  <span id="messageDetails">af adf sd asdg ad</span>
+  </div>
+  <div class="btnreg">
+<button id="send" type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+
+</div>
+<!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="thumbnail">
+<img src="save-water-drink-alcohol.png" class="img-responsive" id="regpic"/>
+</div>
+</div>-->
+
+<div id="fb-root"></div>
+<div class="fb-like-box" data-href="https://www.facebook.com/FacebookDevelopers" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+</div>
+</div>
+</body>
+</html>

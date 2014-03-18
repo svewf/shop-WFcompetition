@@ -1,0 +1,169 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="alcohol.css" />
+<script type="text/javascript" src="alcohol.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="wojodesign/simpleCart.js"></script>
+<script type="text/javascript" src="flexisel/js/jquery.flexisel.js"></script>
+<script src="classysocial/js/jquery.classysocial.js"></script>
+<link rel="stylesheet" type="text/css" href="classysocial/css/jquery.classysocial.css" />
+<link href="flexisel/css/style.css" rel="stylesheet" type="text/css" />
+<link href="wojodesign/test/css/qunit.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="colors">
+<div class="container-fluid">
+<div class="row">
+	<div class="col-xs-12">
+		<div class="header">
+		<div class="col-sm-10 col-md-11 col-lg-11">
+			<div id="Title"><img src="cooltext1451775779.png" class="img-responsive" />
+			</div>
+			</div>
+			<div class="col-sm-2 col-md-1 col-lg-1">
+			<div class="welcomeusr"><label class="userlab">Welcome</label></div>
+			<div class="logout"><a href="" class="logout">Log out</a></div>
+			<!--<p class="titledesc">Connecting people</p>-->
+			<!--<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
+					99%
+				</div>
+				
+			</div>-->
+		</div>
+		</div>
+	</div>
+</div>
+<nav class="navbar navbar-inverse" role="navigation">
+  
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Alcohol</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#">Home</a></li>
+        <li><a href="#">My Account</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Wines</a></li>
+			   <li class="divider"></li>
+            <li class=""><a href="#">Spirits</a></li>
+			   <li class="divider"></li>
+            <li><a href="#">Beer</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Others</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <div class="basket">
+		<span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+		<a href="javascript:;" class="simpleCart_empty">empty</a>
+<a href="javascript:;" class="simpleCart_checkout" Title="Checkout">
+		    <span class="glyphicon glyphicon-shopping-cart"></span></a>
+		</div>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+	</nav>
+	<div class="jumbotron">
+	<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	<div class="simpleCart_items">
+	<table>
+	<thead>
+	<tr class="headerRow">
+		<th class="item-name"></th>
+		<th class="item-quantity"></th>
+		<th class="item-remove"></th>
+		<th class="item-price"></th>
+		<th class="item-total"></th>
+	</tr>
+	</thead>
+
+	<tbody>
+	<tr class="itemRow">
+	<td class="item-name">product</td>
+	<td class="item-quantity"><input type="text" value="5" class="simpleCart_input"></td>
+	<td class="item-remove"><a href="javascript:;" class="simpleCart_remove"></a></td>
+	<td class="item-price"></td>
+	<td class="item-total"></td>
+	</tr>
+	</tbody>
+	</table>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="row" id="footer">
+		<div class="col-md-3 col-xs-12 col-sm-3 col-lg-3">
+			<div class="bbb">
+				<ul class="ftulstl">Information
+				<li class="divid"></li>
+					<li class="listFooter"><a href="#">About</a></li>
+					<li class="listFooter"><a href="#">Payment</a></li>
+					<li class="listFooter"><a href="#">Private Policy</a></li>
+					<li class="listFooter"><a href="#">Terms & Conditions</a></li>
+					<li class="listFooter"><a href="#">Delivery Information</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-12 col-sm-3 col-lg-3">
+			<div class="bbb">
+				<ul class="ftulstl">Categories
+				<li class="divid"></li>
+					<li class="listFooter"><a href="#">Wine</a></li>
+					<li class="listFooter"><a href="#">Champagne</a></li>
+					<li class="listFooter"><a href="#">Tequila</a></li>
+					<li class="listFooter"><a href="#">Whiskey</a></li>
+					<li class="listFooter"><a href="#">Liquor</a></li>
+					<li class="listFooter"><a href="#">Vodka</a></li>
+					<li class="listFooter"><a href="#">Beer</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-12 col-sm-3 col-lg-3">
+			<div class="bbb">
+				<ul class="ftulstl">My Account
+				<li class="divid"></li>
+					<li class="listFooter"><a href="#">Sign in</a></li>
+					<li class="listFooter"><a href="#">View Cart</a></li>
+					<li class="listFooter"><a href="#">View new offers</a></li>
+					<li class="listFooter"><a href="#">...</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-3 col-xs-12 col-sm-3 col-lg-3">
+			<div class="bbb">
+				<ul class="ftulstl"><a href="contactus.html">Contact Us</a>
+				<li class="divid"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div><!-- /.container-fluid -->
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="alcohol.css" />
+<script src="js/bootstrap.min.js"></script>
+<script src="wojodesign/simpleCart.js"></script>
+
+
+<link href="wojodesign/test/css/qunit.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script>
+  simpleCart({
+  
+    checkout: {
+      type: "PayPal",
+      email: "you@yours.com"
+    }
+  });
+simpleCart.Item._.shipping = function(){
+     if( this.get( 'size' ) == "small" ){
+         return this.quantity()*2;
+     } else {
+         return this.quantity()*5;
+     }
+};
+simpleCart.bind( "afterAdd" , function( item , isNew ){
+  if( item.get( 'weight' ) > 5 ){
+    item.price( 35.99 );
+  } else {
+    item.price( 20 );
+  }
+});
+simpleCart({
+    cartColumns: [
+        { attr: "name" , label: "Name" } ,
+        { attr: "price" , label: "Price", view: 'currency' } ,
+        { view: "decrement" , label: false , text: "-" } ,
+        { attr: "quantity" , label: "Qty" } ,
+        { view: "increment" , label: false , text: "+" } ,
+        { attr: "total" , label: "SubTotal", view: 'currency' } ,
+        { view: "remove" , text: "Remove" , label: false }
+    ]
+});
+</script>
+<div class="container">
+
+<div class="simpleCart_shelfItem">
+  <span class="item_price">$35.99</span><br>
+  <a class="item_add" href="javascript:;"> Add to Cart </a></p>
+</div>
+
+<span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+<a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+
+<button type="button"><a href="javascript:;" class="simpleCart_empty">empty</a></button>
+<div class="simpleCart_items"></div>
+<div class="simpleCart_shipping">22$</div>
+
+
+<div class="simpleCart_shelfItem">
+    <img src="/images/item_thumb.jpg" class="item_thumb" />
+   
+    <select class="item_size">
+        <option value="Small"> Small </option>
+        <option value="Medium"> Medium </option>
+        <option value="Large"> Large </option>
+    </select>
+    <input type="text" value="1" class="item_Quantity">
+    <span class="item_price">$35.99</span>
+    <a class="item_add" href="javascript:;"> Add to Cart </a>
+</div>
+<div class="simpleCart_items">
+<div class="item-decrement "><a href="javascript:;" class="simpleCart_decrement">-</a></div>
+<div class="item-price">$139.86</div>
+<div class="item-increment"><a href="javascript:;" class="simpleCart_increment">+</a></div>
+<div class="item-remove "><a href="javascript:;" class="simpleCart_remove">X</a></div>
+</div>
+
+<div id="cartPopover" style="display: block;">
+					<div id="triangle">▲</div>
+					<div class="simpleCart_items"> <div><div><div class="headerRow"><div class="item-custom"></div><div class="item-name"></div><div class="item-total"></div></div></div><div class="itemRow row-0 odd" id="cartItem_SCI-4"><div class="item-custom"><span>4</span><div><a href="javascript:;" class="simpleCart_increment"><img src="/assets/images/increment.png" title="+1" alt="arrow up"></a><a href="javascript:;" class="simpleCart_decrement"><img src="/assets/images/decrement.png" title="-1" alt="arrow down"></a></div></div><div class="item-name">Good To Great</div><div class="item-total">$51.96</div></div></div></div>
+					<div id="cartData" class="clearfix">
+						<div class="left"><strong>Items: </strong><span class="simpleCart_quantity">4</span></div>
+						<div class="right"><strong>Total: </strong><span class="simpleCart_total">$51.96</span></div>
+					</div>
+					<div id="popoverButtons" class="clearfix">
+						<a href="/cart/" class="hudbtn left">View</a>
+						<a href="javascript:;" class="simpleCart_checkout hudbtn primary right">Checkout</a>
+					</div>
+				</div>
+</div>
+</body>
+</html>

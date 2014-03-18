@@ -1,0 +1,122 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="alcoholvalid.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="alcohol.css" />
+</head>
+<body class="colors">
+<div class="container-fluid">
+<div class="row">
+	<div class="col-xs-12">
+		<div class="header">
+			<div id="Title"><img src="cooltext1451775779.png" class="img-responsive" /></div>
+			<!--<p class="titledesc">Connecting people</p>-->
+			<!--<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 99%;">
+					99%
+				</div>
+				
+			</div>-->
+		</div>
+	</div>
+</div>
+
+<div class="jumbotron">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<form role="form" id="reg_form">
+<div class="form-group">
+    <label for="name">First name</label>
+    <input type="text" class="form-control" id="name" placeholder="First name">
+	<span id="nameDetails">What's your name</span>
+  </div>
+  <div class="form-group">
+    <label for="name">Last name</label>
+    <input type="text" class="form-control" id="name2" placeholder="Last name">
+	<span id="nameDetails2">What's your name</span>
+  </div>
+<div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email">
+	<span id="emailDetails">So I can get back to you</span>
+  </div>
+  <div class="form-group">
+    <label for="Password1">Password</label>
+    <input type="password" class="form-control" id="Password1" placeholder="Password">
+	<span id="Password1Details">8 characters or more</span>
+  </div>
+  <div class="form-group">
+    <label for="Password2">Confirm password</label>
+    <input type="password" class="form-control" id="Password2" placeholder="Confirm password">
+		<span id="Password2Details">Same as above</span>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+  <label for="exampleInputEmail1">Day</label>
+  <select class="form-control" id="sday">
+  <option value="-1">Select</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+<span id="sdayDetails">Please select</span>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<label for="exampleInputEmail1">Month</label>
+<select class="form-control" id="smonth">
+  <option value="-1">Select</option>
+  <option value="1">January</option>
+  <option value="2">February</option>
+  <option value="3">March</option>
+  <option value="4">April</option>
+</select>
+  <span id="smonthDetails">Please select</span>
+</div>
+<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+<label for="exampleInputEmail1">Year</label>
+<select class="form-control" id="syear">
+  <option value="-1">Select</option>
+  <option value="1">2014</option>
+  <option value="2">2013</option>
+  <option value="3">2012</option>
+  <option value="4">2011</option>
+</select>
+<span id="syearDetails">Please select</span>
+</div>
+</div>
+    <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Male
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Female
+  </label>
+</div>
+  <div class="form-group">
+  <label for="message">About me</label>
+  <textarea id="message" class="form-control" rows="3"></textarea>
+  <span id="messageDetails">Min 30 characters</span>
+  </div>
+  <div class="btnreg">
+<button id="send" type="submit" class="btn btn-success">Submit</button>
+</div>
+</form>
+
+</div>
+<!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="thumbnail">
+<img src="save-water-drink-alcohol.png" class="img-responsive" id="regpic"/>
+</div>
+</div>-->
+</div>
+</div>
+</body>
+</html>
