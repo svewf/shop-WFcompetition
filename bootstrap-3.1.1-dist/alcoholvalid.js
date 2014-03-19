@@ -47,7 +47,7 @@ form.submit(function(e){
 	
 
 	if (validateName() & validateName2() & validateEmail() & validatePassword1() & validatePassword2() & validateMessage() & validateSday() & validateSmonth() & validateSyear()) {
-		return true;
+		window.location = "test.html";
 	} else {
 		return false;
 	}
