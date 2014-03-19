@@ -26,8 +26,8 @@ $("#flexiselDemo3").flexisel({
         }
     });
 });
+
 simpleCart({
-  
     checkout: {
       type: "PayPal",
       email: "you@yours.com"
