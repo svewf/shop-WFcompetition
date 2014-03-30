@@ -78,3 +78,8 @@ a:hover{text-decoration:none;color:black;color:#428bca;}
 #reg_form textarea.error{border-color:#e77774;}
 #red_form select.error{border-color:#e77774;}
 select.error{border-color:#e77774;}
+#reg_formTwo input.error{border-color:#e77774;}
+#reg_formTwo div span.error{color:red;}
+#reg_formTwo textarea.error{border-color:#e77774;}
+#red_formTwo select.error{border-color:#e77774;}
+#red_formTwo{margin-left:15px;}

@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="alcohol.css" />
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript" src="alcoholcontactus.js"></script>
+<script type="text/javascript" src="cuntactusvalid.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="wojodesign/simpleCart.js"></script>
 <link href="wojodesign/test/css/qunit.css" rel="stylesheet" type="text/css" />
@@ -48,15 +49,17 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class=""><a href="test.html">Home</a></li>
+<ul class="nav navbar-nav">
+        <li class=""><a href="registration.html">Sign Up</a></li>
+		<li class=""><a href="test.html">Home</a></li>
         <li><a href="#">My Account</a></li>
+		<li class="active"><a href="contactus.html">Contact us</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="#">Wines</a></li>
 			   <li class="divider"></li>
-            <li class=""><a href="#">Spirits</a></li>
+            <li><a href="catalog.html">Spirits</a></li>
 			   <li class="divider"></li>
             <li><a href="#">Beer</a></li>
             <li class="divider"></li>
@@ -76,7 +79,7 @@
         <div class="basket">
 		<span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
 		<a href="javascript:;" class="simpleCart_empty">empty</a>
-<a href="javascript:;" class="simpleCart_checkout" Title="Checkout">
+<a href="view.html">
 		    <span class="glyphicon glyphicon-shopping-cart"></span></a>
 		</div>
       </ul>
@@ -109,6 +112,28 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<form role="form" id="reg_formTwo">
+	<div class="form-group">
+		<label for="name">First name</label>
+		<input type="text" class="form-control" id="name" placeholder="First name">
+		<span id="nameDetails">What's your name</span>
+	 </div>
+	 <div class="form-group">
+		<label for="email">Email address</label>
+		<input type="email" class="form-control" id="email" placeholder="Enter email">
+		<span id="emailDetails">Insert your mail</span>
+	</div>
+	 <div class="form-group">
+		  <label for="message">About me</label>
+		  <textarea id="message" class="form-control" rows="3"></textarea>
+		  <span id="messageDetails">Min 30 characters</span>
+	  </div>
+	<div class="btnreg">
+		<button id="send" type="submit" class="btn btn-success">Send</button>
+	</div>
+</form>
+		</div>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 			<div id="map">
